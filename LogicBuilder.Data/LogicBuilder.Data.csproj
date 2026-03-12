@@ -11,9 +11,9 @@
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <Description>LogicBuilder.Data includes the base class and interface for all data objects in the applications data stack.</Description>
+    <Description>LogicBuilder.Data includes the interface all Entity Framework POCO (Plain Old CLR Object) classes must implement to participate in the framework's change tracking and be used with all generic repository methods.</Description>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>Supporting .NET 10.0.</PackageReleaseNotes>
+    <PackageReleaseNotes>Refactoring to optimize DevOps.</PackageReleaseNotes>
     <PackageTags>crud operations</PackageTags>
     <Copyright>Copyright © BPS 2017</Copyright>
     <RepositoryUrl>https://github.com/BpsLogicBuilder/LogicBuilder.Data</RepositoryUrl>
