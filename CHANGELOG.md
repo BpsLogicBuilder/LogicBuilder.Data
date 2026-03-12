@@ -1,3 +1,4 @@
+* 2026-03-12 - AB#75: Fix missing space in release.yml
 * 2026-03-12 - AB#75 Update project description, release notes, and badges.
 * 2026-03-12 - AB#74 Adding status badges to ReadMe.md.
 * 2026-03-12 - Refactor workflow permissions and update Node.js version
