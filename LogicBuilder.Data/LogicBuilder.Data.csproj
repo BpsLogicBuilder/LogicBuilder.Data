@@ -4,9 +4,15 @@
 		<TargetFrameworks>netstandard2.0</TargetFrameworks>
     <RootNamespace>LogicBuilder.Data</RootNamespace>
     <PackageId>LogicBuilder.Data</PackageId>
-    <Authors>BlaiseD</Authors>
-    <Description>LogicBuilder.Data includes the base class for all data objects in the applications data stack.</Description>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<Authors>BlaiseD</Authors>
+		<LangVersion>latest</LangVersion>
+		<WarningsAsErrors>true</WarningsAsErrors>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <Description>LogicBuilder.Data includes the base class and interface for all data objects in the applications data stack.</Description>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>Supporting .NET 10.0.</PackageReleaseNotes>
     <PackageTags>crud operations</PackageTags>
     <Copyright>Copyright © BPS 2017</Copyright>
@@ -14,6 +20,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/BpsLogicBuilder/LogicBuilder</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>icon.png</PackageIcon>
     <AssemblyOriginatorKeyFile>..\LogicBuilder.Rules.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
     <MinVerTagPrefix>v</MinVerTagPrefix>
@@ -22,7 +29,8 @@
   </PropertyGroup>
 
 	<ItemGroup>
-		<None Include="docs\README.md" Pack="true" PackagePath="\" />
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+		<None Include="..\icon.png" Pack="true" PackagePath="\" Visible="False" />
 	</ItemGroup>
 
   <ItemGroup>
@@ -30,6 +38,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.200" PrivateAssets="All" />
   </ItemGroup>
 </Project>
